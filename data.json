@@ -1,0 +1,77 @@
+{
+    "users":[
+        {
+            "year":"2012",
+            "Average population": "34,880,000",
+            "Live briths": "381,869",
+            "Deaths": "256,965",
+            "Natural change": "124,904",
+            "Brith rate(per 1,000)": "10.9",
+            "Death rate(per 1,000)": "7.4",
+            "Natural change(per 1,000)": "3.6",
+            "Total Fertillity Rate": "1.614"
+        },
+        {
+            "year":"2013",
+            "Average population": "35,293,000",
+            "Live briths": "380,323",
+            "Deaths": "256,982",
+            "Natural change": "123,341",
+            "Brith rate(per 1,000)": "10.8",
+            "Death rate(per 1,000)": "7.3",
+            "Natural change(per 1,000)": "3.5",
+            "Total Fertillity Rate": "1.587"
+        },
+        {
+            		
+						
+
+
+            "year":"2014",
+            "Average population": "35,667,000",
+            "Live briths": "383,478",
+            "Deaths": "259,520",
+            "Natural change": "123,958",
+            "Brith rate(per 1,000)": "10.7",
+            "Death rate(per 1,000)": "7.3",
+            "Natural change(per 1,000)": "3.4",
+            "Total Fertillity Rate": "1.582"
+        },
+        {
+            "year":"2015",
+            "Average population": "35,981,000",
+            "Live briths": "385,292",
+            "Deaths": "267,353",
+            "Natural change": "117,939",
+            "Brith rate(per 1,000)": "10.7",
+            "Death rate(per 1,000)": "7.4",
+            "Natural change(per 1,000)": "3.3",
+            "Total Fertillity Rate": "1.563"
+        },
+        {
+							
+            "year":"2016",
+            "Average population": "36,503,000",
+            "Live briths": "389,874",
+            "Deaths": "273,374",
+            "Natural change": "116,500",
+            "Brith rate(per 1,000)": "10.6",
+            "Death rate(per 1,000)": "7.5",
+            "Natural change(per 1,000)": "3.2",
+            "Total Fertillity Rate": "1.543"
+        },
+        {
+            "year":"2012",
+            "Average population": "36,963,000",
+            "Live briths": "390,573",
+            "Deaths": "281,457",
+            "Natural change": "109,116",
+            "Brith rate(per 1,000)": "10.3",
+            "Death rate(per 1,000)": "7.6",
+            "Natural change(per 1,000)": "3.0",
+            "Total Fertillity Rate": "1.494"
+        }
+        
+
+    ]
+}
