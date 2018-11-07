@@ -4,13 +4,13 @@
   "description": "The basis of this assignment is to take complex information – statistics, research\r results, data comparison, forms, charts, analysis, etc., – and present it in the most\r efficient and easily understood way possible. The specific difference between this\r form of design and traditional infographics is the dynamic nature of the interactive\r information design. In this context the complexity of information can parse both live\r and static content from a variety of sources with realtime results. This data could be\r drawn from data bases, user inputs, algorithms, etc.,",
   "main": "gulpfile.js",
   "dependencies": {
+    "gulp": "^3.9.1",
     "gulp-css-format-oneline": "^1.2.0",
     "gulp-watch-sass": "^1.4.1",
+    "package-lock.json": "^1.0.0",
     "package.json": "^2.0.1"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/janeandjack/Li_Chaochao_A2_HW3_InfoGraphic.git"
   },
-  "keywords": [
-    "infographic"
-  ],
   "author": "Chaochao Li",
   "license": "ISC",
   "bugs": {
