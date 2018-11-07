@@ -5,12 +5,14 @@
    
 
 var option_1 = {
+  
     tooltip: {
         trigger: 'item',
         formatter: "{a} <br/>{b}: {c} ({d}%)"
     },
     legend: {
         y: 50,
+        x:1,
         // orient: 'vertical',
         // x: 'left',
         data:['0-14 male','0-14 female','15-64 male','15-64 female','65+ male','65+ female']
@@ -44,11 +46,11 @@ var option_1 = {
             radius: ['40%', '55%'],
             label: {
                 normal: {
-                    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
-                    backgroundColor: '#eee',
-                    borderColor: '#aaa',
-                    borderWidth: 1,
-                    borderRadius: 4,
+                    // formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+                    // backgroundColor: '#eee',
+                    // borderColor: '#aaa',
+                    // borderWidth: 1,
+                    // borderRadius: 4,
                     // shadowBlur:3,
                     // shadowOffsetX: 2,
                     // shadowOffsetY: 2,
@@ -104,7 +106,7 @@ myChart_1.setOption(option_1);
   
 
 var option = {
-	
+   
     tooltip : {
         trigger: 'axis',
         axisPointer : {            
@@ -114,13 +116,14 @@ var option = {
         data: ['N.L.', 'P.E.I.','N.S.','N.B.','Que.','Ont.','Man.','Sask.','Alta.','B.C.','Y.T.','N.W.T.','Nvt.']
     },
     grid: {
-        left: '3%',
+        left: '2%',
         right: '4%',
         bottom: '3%',
         containLabel: true
     },
     xAxis:  {
         type: 'value'
+       
     },
     yAxis: {
         type: 'category',
@@ -289,12 +292,44 @@ var option = {
 };
       //  use configuration item and data specified to show chart
         myChart.setOption(option);
-
+    
+  
+    $(document).ready(function() {
+        $("#age_text").click(function() {
+            $.ajax({
+                url : "./assets/age_structure.txt",
+                dataType: "text",
+                success : function (data1) {
+                    $(".text").html(data1);
+    console.log(data1);
+                  // this function load at firefox, but sometimes not at chrone. need to update  
+                }
+                
+            });
+        });
+    }); 
         $(document).ready(function(){
             $.ajax({
-                url:"data.json",
+                url:"./assets/data.json",
                 dataType:"json",
-                success:function(data){}
+                success:function(data){
+console.log(data);
+                        
+                    $(data.users).each(function(key, value) {
+                        var record="<tr><td>"+//(index+1)+
+                       + value.year+
+                        "</td><td>" + value.Average_population+ 
+                        "</td><td>" + value.Live+
+                        "</td><td>" + value.Deaths+
+                        "</td><td>" + value.Natural+
+                        "</td><td>" + value.Brith + 
+                        "</td><td>" + value.Death +
+                        "</td><td>" + value.Naturals +
+                        "</td><td>" + value.Total +"</td></tr>";
+                        $("table").append(record);
+
+                    });
+                }
             });
         });
 	})();

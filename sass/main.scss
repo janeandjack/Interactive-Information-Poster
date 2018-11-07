@@ -1,0 +1,15 @@
+@import '_vars';
+@import 'modules/_header';
+@import 'modules/_content';
+@import 'modules/_footer';
+
+body
+{
+    margin: 0 auto;
+    background: url(../images/greyzz_@2X.png);
+    /* background: #f2f1ed; */
+    /* text-align: center; */
+    max-width: 75em;
+    
+  
+}
