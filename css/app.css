@@ -1,8 +1,14 @@
+
+
 body
 {
     margin: 0 auto;
-    /* background: url(../images/greyzz_@2X.png); */
-    background: #f3babc;
+    background: url(../images/greyzz_@2X.png);
+    /* background: #f2f1ed; */
+    /* text-align: center; */
+    max-width: 75em;
+    
+  
 }
 .logo {
     width: 200px;
@@ -10,13 +16,13 @@ body
 }
 .Demog_logo
 {
-    width: 100%;
-    height: 90%; /*200px;*/
+    width: 80%;
+    height: 90%; 
     
     margin-top: 20px;
 }
 header{
-    background-color: #f3d7d9;
+    background-color: #f0f8f7;
 }
 b
 {
@@ -38,7 +44,7 @@ span
 }
 .title_t
 {
-    width: 800px;
+    width: 60%;
 }
 .p1
 {
@@ -50,6 +56,7 @@ span
     text-align: center;
 
 }
+
 .sideimg
 {
     width: 70%;
@@ -60,4 +67,84 @@ span
 {
 width: 180px;
 height: 180px;
+}
+.table_1-2
+{
+background-color: #f2f1ed;
+height: 900px;
+
+
+}
+
+.age_1 p, .age_2 p
+{
+    margin-top: 20px;
+    color: #ef232c;
+    opacity: 0.8;
+    font-family: "Agency FB", 'Times New Roman', Times, serif;
+}
+.age_1 p
+{
+    margin-left: 70px;
+}
+#age_text 
+{
+    color: black;
+    font-size: 25px;   
+    font-family: "Agency FB", 'Times New Roman', Times, serif;  
+}
+.text
+{
+    color: rgb(59, 59, 55);
+    opacity: 0.8;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Agency FB", 'Times New Roman', Times, serif;
+}
+
+.table_3_1
+{
+    /* margin-left: -20px; */
+    /* margin-top: -200px; */
+    clear: both;
+  position: relative;
+  height: 600px;
+  
+  background-color: #e8edec;
+
+}
+.table_3 p
+{
+    font-family: "Agency FB", 'Times New Roman', Times, serif;
+    margin-left: 500px;
+}
+ 
+.table_3 table tr th
+{
+    font-size: 28.9px;
+    font-family: "Agency FB", 'Times New Roman', Times, serif;
+}
+@media screen and (min-width: 22.5em) {
+
+}
+@media screen and (min-width: 48em) {
+
+   
+}
+@media screen and (min-width: 50em) {
+   
+   .age_1,.age_2
+
+   {
+    
+     max-width: 100%;
+     float: left;
+  
+   }
+   .table_1
+   {
+       margin-left: auto;
+ 
+   }
 }
