@@ -103,9 +103,7 @@ var option_1 = {
 myChart_1.setOption(option_1);
  var myChart = echarts.init(document.getElementById('main'));
 
-  
-
-var option = {
+  var option = {
    
     tooltip : {
         trigger: 'axis',
@@ -292,7 +290,58 @@ var option = {
 };
       //  use configuration item and data specified to show chart
         myChart.setOption(option);
-    
+//Ajax begin
+
+
+
+        function loadDoc(data) {
+            const {age_range, male, female} = data; 
+            document.querySelector('.tb_4-1').innerHTML = age_range;
+            document.querySelector('.tb_4-2').innerHTML= male;
+            document.querySelector('.tb_4-3').innerHTML= female;
+               
+        }
+        function loadDoc1(data) {
+            const {age_range, male, female} = data; 
+            document.querySelector('.tb_4-4').innerHTML = age_range;
+            document.querySelector('.tb_4-5').innerHTML= male;
+            document.querySelector('.tb_4-6').innerHTML= female;
+               
+        }
+        function loadDoc2(data) {
+            const {age_range, male, female} = data; 
+            document.querySelector('.tb_4-7').innerHTML = age_range;
+            document.querySelector('.tb_4-8').innerHTML= male;
+            document.querySelector('.tb_4-9').innerHTML= female;
+               
+        }
+        function loadDoc3(data) {
+            const {age_range, male, female} = data; 
+            document.querySelector('.tb_4-10').innerHTML = age_range;
+            document.querySelector('.tb_4-11').innerHTML= male;
+            document.querySelector('.tb_4-12').innerHTML= female;
+               
+        }
+
+function getData(){
+            fetch('./assets/connect.php')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);//can load data from age_structure.sql in console, but js function not working
+                loadDoc(data[0]);
+                loadDoc1(data[1]);
+                loadDoc2(data[2]);
+                loadDoc3(data[3]);
+        })
+            .catch(function(error){
+               // console.log(error); 
+            });
+        }
+        getData();
+        
+
+
+
   
     $(document).ready(function() {
         $("#age_text").click(function() {
